@@ -1,8 +1,8 @@
 import './App.css';
 
 import { Login } from "./Componentes/login.js";
-import { ListaProductosUsuario } from "./Componentes/userListaProductos.js";
-import { CarritoCompras } from "./Componentes/userCarrito.js";
+import { ListaProductosUsuario } from "./Componentes/UserListaProductos.js";
+import { CarritoCompras } from "./Componentes/UserCarrito.js";
 import { CrearUsuarios } from "./Componentes/AdminCrearUsuarios.js";
 import { CrearProdcutos } from "./Componentes/AdminCrearProductos.js";
 import { ListaProductosAdmin } from "./Componentes/AdminListaProductos";

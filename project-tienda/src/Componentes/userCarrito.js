@@ -1,13 +1,13 @@
 import { Component } from "react";
 import '../Estilos/Tabla.css';
 
-var heading = ['Id Producto', 'Nombre Producto', 'Descripcion Producto', 'Valor Unitario'];
+var heading = ['Id Producto', 'Nombre Producto', 'Descripcion Producto',"", 'Valor Unitario'];
 
 //var body = conexion a un BD NOsq o sql o un arcgivo plano
 
 var body =
     [
-        ['PI-0001', 'Guantes', 'Unidades dependiendo de tallas', '3'],
+        ['PI-0001', 'Guantes', 'Unidades dependiendo de tallas', "", '$5.000'],
 
     ];
 
@@ -16,7 +16,7 @@ export function CarritoCompras() {
 
     return (
         <>
-            <div id='TablaCarrito'>
+            <div Class="container-fluid col-6 col-md-6 pt-3 ps-4 bg-success bg-opacity-85 text-white fst-italic "id='TablaCarrito '>
                 <h3>Lista de Compras</h3>
                 <br></br>
                 <div >

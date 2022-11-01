@@ -1,3 +1,72 @@
+
+
+
+
+
+
+
+
+
+
+import { Component } from "react";
+
+import JsonData from '../data/productosPrueba.json'
+
+function Table({theadData, tbodyData}) {
+    return (
+        <table>
+            <thead>
+                <tr>
+                {theadData.map(heading => {
+                return <th key={heading}>{heading}</th>
+                })}
+            </tr>
+            </thead>
+            <tbody>
+                {tbodyData.map((row, index) => {
+                    return <tr key={index}>
+                        {theadData.map((key, index) => {
+                            return <td key={row[key]}>{row[key]}</td>
+                            
+                            
+                        })}
+                        
+                        <button>Comprar</button>
+            
+                </tr>;
+                })}
+            </tbody>
+        </table>
+    );
+    }
+
+    export  function ListaProductosUsuario() {
+    
+    const getHeadings = () => {
+        return Object.keys(JsonData[0]);
+    }
+    return (
+        
+        <div class="container-fluid col-6 col-md-6 pt-3 ps-4 bg-success bg-opacity-85 text-white fst-italic">
+        <h3>Productos Tienda Web</h3>
+        <br></br>
+        <Table theadData={getHeadings()} tbodyData={JsonData}/>
+        </div>
+    );
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 import { Component } from "react";
 import '../Estilos/Tabla.css';
 
@@ -65,3 +134,5 @@ class TableRow extends Component {
         )
     }
 }
+
+*/

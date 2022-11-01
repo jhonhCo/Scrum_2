@@ -16,7 +16,7 @@ export const MenuNavegacion = ({ rol }) => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse " id="navbarNav">
-        {rol === "admin" ? (
+        {rol === "" ? (
           <ul className="navbar-nav">
             <li className="nav-item active">
               <Link className="nav-link  text-white" to={"/"}>Login</Link>
